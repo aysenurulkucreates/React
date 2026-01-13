@@ -4,8 +4,12 @@
 - sonra npm install en son npm run dev
 - React'te bir listeyi döngüye sokup ekrana basıyorsan (yani .map kullanıyorsan), o döngünün içindeki en dış kutuya (kapsayıcıya) mutlaka bir key vermen gerekir.
 
+# GENEL REACT KURALLARI
+
 Ne Zaman?
 ✅ .map(...) yazıp birden fazla şeyi alt alta dizdiğin her an.
 
 Nereye?
 Döngünün içindeki en baştaki etikete.
+
+- usestate bir şieyi değiştrmek için kullanılır, mutlaka yanında 2 değer ile yazıluır. Mesela const[quantity, setQuantity] = useState() deriz. usestate içini sayfa ilk açıldığında sabir bir şey görünmesini istersek yazarız, yok noş gözüksün dersen "" yazarız sadece. Ayrıca form yazdığın zaman yani içinde bir değşiklik olmasını istediğin durumlarda, o yapıya onchange yapısını kurarsın, onChange={(e) => setDescription(Number(e.target.value))} yani bu tarzda.
