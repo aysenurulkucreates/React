@@ -20,3 +20,5 @@ Döngünün içindeki en baştaki etikete.
   Backend İlişkisi Genelde basit işler (sayfayı aç/kapat) için kullanılır. Backend'e "Yeni kayıt oluştur" veya "Giriş yap" emri göndermek için standarttır.
 
   - Eğer ki bir fonksiyon ya da useState proje içindeki birkaç yerde kullanılabilecekse bunu app fonksiyonu içerisinde tanımlayabiliriz.
+
+  - Eğer bir fonksiyona parametre (burada item.id) göndermen gerekiyorsa ve bunun sadece tıklanınca çalışmasını istiyorsan, başına o "bekçiyi" (() =>) koymak zorundasın.
