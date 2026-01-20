@@ -18,9 +18,29 @@ Döngünün içindeki en baştaki etikete.
   Tetiklenme Sadece butona "tıklayınca" çalışır. Hem butona tıklayınca hem de Enter'a basınca çalışır.
   Veri Paketi Verileri tek tek elinle toplaman gerekir. Formun içindeki tüm inputları bir bütün olarak ele almanı sağlar.
   Backend İlişkisi Genelde basit işler (sayfayı aç/kapat) için kullanılır. Backend'e "Yeni kayıt oluştur" veya "Giriş yap" emri göndermek için standarttır.
-  - Eğer ki bir fonksiyon ya da useState proje içindeki birkaç yerde kullanılabilecekse bunu app fonksiyonu içerisinde tanımlayabiliriz.
+- Eğer ki bir fonksiyon ya da useState proje içindeki birkaç yerde kullanılabilecekse bunu app fonksiyonu içerisinde tanımlayabiliriz.
 
-  - Eğer bir fonksiyona parametre (burada item.id) göndermen gerekiyorsa ve bunun sadece tıklanınca çalışmasını istiyorsan, başına o "bekçiyi" (() =>) koymak zorundasın.
+- Eğer bir fonksiyona parametre (burada item.id) göndermen gerekiyorsa ve bunun sadece tıklanınca çalışmasını istiyorsan, başına o "bekçiyi" (() =>) koymak zorundasın.
+
+- Bir Component yazarken kendine şunları sor:
+
+İçinde .map() döngüsü var mı?
+
+EVET → Kesinlikle Props (movies={movies}) kullan.
+
+Sadece bir div, nav veya açılır/kapanır kutu mu?
+
+EVET → Children ({children}) kullan.
+
+İçeriği dinamik mi üretiliyor (veriden mi geliyor)?
+
+EVET → Props.
+
+Özet:
+
+Kutular (Layout) → children (Lego kutusu)
+
+Listeler (Logic) → props (İş makinesi)
 
 /\*
 SPACING SYSTEM (px)
