@@ -42,6 +42,13 @@ Kutular (Layout) → children (Lego kutusu)
 
 Listeler (Logic) → props (İş makinesi)
 
+- Ne Zaman Hangisi?
+  Tek bir içerik varsa: children daha temizdir. (Genelde Jonas da buna döner).
+
+Birden fazla "delik" varsa: Mesela bir kutunun hem "Başlığına" (header) hem "Gövdesine" (body) ayrı şeyler koyacaksan, element gibi prop'lar hayat kurtarır.
+
+Örnek: <SplitScreen left={<List />} right={<Detail />} />
+
 /\*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
