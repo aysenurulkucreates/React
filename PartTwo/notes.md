@@ -48,3 +48,7 @@ Listeler (Logic) → props (İş makinesi)
 Birden fazla "delik" varsa: Mesela bir kutunun hem "Başlığına" (header) hem "Gövdesine" (body) ayrı şeyler koyacaksan, element gibi prop'lar hayat kurtarır.
 
 Örnek: <SplitScreen left={<List />} right={<Detail />} />
+
+- [] Yok Panik Atak: Her saniye hastaya kalp masajı yapmak. Her Render'da (Sürekli).
+  [] Boş Triyaj: Sadece hasta kapıdan girerken bakmak. Sadece ilk açılışta (Mount).
+  [query] Monitör: Sadece nabız (query) değişince alarma geçmek. İlk açılışta + query değiştikçe.
