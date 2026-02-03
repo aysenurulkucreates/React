@@ -3,6 +3,7 @@
 - npm create vite@latest . terminale bunu yaz, noktayı da sakın unutma.
 - sonra npm install en son npm run dev
 - React'te bir listeyi döngüye sokup ekrana basıyorsan (yani .map kullanıyorsan), o döngünün içindeki en dış kutuya (kapsayıcıya) mutlaka bir key vermen gerekir.
+- npm install eslint vite-plugin-eslint eslint-config-react-app bunu kuralalra uymak için indiriyoruz, yanlış yaptığında uyarılıyorsun. bu eski süürm.
 
 # GENEL REACT KURALLARI
 
