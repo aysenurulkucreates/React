@@ -1,4 +1,5 @@
 .nav {
+  background-color: orangered;
   display: flex;
   align-items: center;
   justify-content: space-between;
