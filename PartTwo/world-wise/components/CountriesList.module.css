@@ -1,8 +1,8 @@
-.countryList {
+.countriesList {
   width: 100%;
   height: 65vh;
+  margin: auto;
   list-style: none;
-  overflow-y: scroll;
   overflow-x: hidden;
 
   display: grid;
