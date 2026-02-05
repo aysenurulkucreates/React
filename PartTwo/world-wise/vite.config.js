@@ -7,8 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     eslint({
-      failOnError: false, // Hata olsa bile uygulamayı durdurma
-      emitWarning: true, // Hataları sadece "uyarı" olarak göster
+      failOnError: false, // Hata olsa da durma, devam et!
+      emitWarning: true, // Hataları sadece uyarı (sarı) olarak göster
+      include: ["**/*.jsx", "**/*.js"], // Sadece bu dosyalara bak
+      exclude: ["/node_modules/"], // Kütüphanelere karışma
     }),
   ],
 });
