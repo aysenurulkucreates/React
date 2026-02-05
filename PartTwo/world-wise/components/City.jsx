@@ -1,3 +1,4 @@
+import { userParams } from "react-router-dom";
 import styles from "./City.module.css";
 
 const formatDate = (date) =>
@@ -9,6 +10,8 @@ const formatDate = (date) =>
   }).format(new Date(date));
 
 function City() {
+  const { id } = userParams();
+
   // TEMP DATA
   const currentCity = {
     cityName: "Lisbon",
@@ -19,6 +22,9 @@ function City() {
 
   const { cityName, emoji, date, notes } = currentCity;
 
+  return <h1>City {id} </h1>;
+
+  /*
   return (
     <div className={styles.city}>
       <div className={styles.row}>
@@ -51,11 +57,10 @@ function City() {
         </a>
       </div>
 
-      <div>
-        <ButtonBack />
-      </div>
+      <div></div>
     </div>
   );
+  */
 }
 
 export default City;
